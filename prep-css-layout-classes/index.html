@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px ;
+      margin:auto;
+    }
+
+    .row {
+      width:100%;
+      display:flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left:8px;
+      padding-right:8px;
+          }
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <h1>Austin Powers</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/Austin_Powers_1.jpg">
+        <h3>International Man of Mystery</h3>
+        <p>A world-class playboy and part-time secret agent from the 1960s emerges after thirty years in a cryogenic state. Although he may be in a different decade, his mission is still the same. He has teamed up with Vanessa Kensington to
+        stop the evil Dr. Evil, who was also frozen in the past. Dr. Evil stole a nuclear weapon and is demanding a payment of 100 billion dollars.</p>
+      </div>
+      <div class="column">
+        <img src="images/Austin_Powers_2.jpg">
+        <h3>The Spy Who Shagged Me</h3>
+        <p>When the fate of the world hangs by a thread, you'd better believe that Super-Secret Agent Johnson is on the job and
+        ready for a sexy, outrageous, pulse-pounding adventure. This send-up of spy thrillers finds Johnson battling the
+        diabolical Dr. Unsound, the resuscitated Goddess of Lust, and her own amorous inclinations.</p>
+      </div>
+      <div class="column">
+        <img src="images/Austin_Powers_3.jpg">
+        <h3>Goldmember</h3>
+        <p>Upon learning that his father has been kidnapped, Austin Powers must travel to 1975 and defeat the aptly named villain
+        Goldmember, who is working with Dr. Evil. Powers embarks on a wild rescue mission through time with beautiful undercover agent Foxxy Cleopatra, looking for
+        answers. However, the question remains- Can Austin shed
+        light on the mystery and save the day?</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
